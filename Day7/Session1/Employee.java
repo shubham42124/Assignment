@@ -7,12 +7,11 @@ public static void main(String args[])
  
 Employee[] obj = new Employee[5] ;  
 
-obj[0] = new Employee(23907,"Dell Laptop");  
-obj[1] = new Employee(91240,"HP 630");  
-obj[2] = new Employee(29823,"LG OLED TV");  
-obj[3] = new Employee(11908,"MI Note Pro Max 9");  
-obj[4] = new Employee(43590,"Kingston USB");  
-//display the product object data  
+obj[0] = new Employee(23907,"Shubham");  
+obj[1] = new Employee(91240,"Ravi");  
+obj[2] = new Employee(29823,"Vishal");  
+obj[3] = new Employee(11908,"Manish");  
+obj[4] = new Employee(43590,"Akshit");  
 System.out.println("Employee Object 1:");  
 obj[0].display();  
 System.out.println("Employee Object 2:");  
