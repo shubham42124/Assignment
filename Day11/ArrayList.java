@@ -12,10 +12,7 @@ class ArrayList{
       //displaying elements
       System.out.println(alist);
   
-      //Adding "Steve" at the fourth position
-      alist.add(3, "Steve");
   
-      //displaying elements
-      System.out.println(alist);
+      
    }  
 }
