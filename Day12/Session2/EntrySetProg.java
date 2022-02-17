@@ -1,6 +1,6 @@
 import java.util.*;
   
-public class Hash_Map_Demo {
+public class EntrySetProg{
     public static void main(String[] args)
     {
   
