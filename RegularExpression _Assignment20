@@ -1,0 +1,124 @@
+package regular.expression;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class MobileNoValidEx {
+	public static void main(String[] args) {
+		
+		
+		Pattern p= Pattern.compile("(0|91)?[7-9][0-9]{9}"); 
+		
+		Matcher m=p.matcher(args[0]);
+		
+		if(m.find() && m.group().equals(args[0])) {
+			
+			System.out.println("valid mobile number");
+		}
+		else
+		{
+			System.out.println("invalid number");
+		}
+	}
+
+}
+
+
+==============================================================================================
+
+
+package regular.expression;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class regex2 {
+public static void main(String[] args) {
+	Pattern p=Pattern.compile("[man]");
+	Matcher m=p.matcher("mann@rtu#456");
+	while(m.find()) {
+		System.out.println(m.start());
+		
+	}
+	
+}
+}
+
+==============================================================================================
+package regular.expression;
+
+import java.time.LocalTime;
+
+public class TimeEx {
+	public static void main(String[] args) {
+		
+		LocalTime tt=LocalTime.now();
+		System.out.println(tt);
+	}
+}
+==============================================================================================
+
+
+
+
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class regex3 {
+	public static void main(String[] args) {
+		Pattern p=Pattern.compile("\\s");
+		Matcher m=p.matcher("ab @ert #tyu");
+		while(m.find()) {
+			System.out.println(m.start());
+		}
+		
+	}
+
+}
+
+==============================================================================================
+
+
+
+package regular.expression;
+
+import java.time.LocalDate;
+import java.time.Period;
+
+public class CountPeriodEx {
+	public static void main(String[] args) {
+		
+		LocalDate birthdy= LocalDate.of(2000, 04, 15);
+		
+		LocalDate tody=LocalDate.now();
+		
+		Period p=Period.between(birthdy, tody);
+		
+		System.out.printf("Age is %d years %d months %d days ",p.getYears(),p.getMonths(),p.getDays());
+	}
+
+}
+
+==============================================================================================
+
+
+package regular.expression;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class regex6 {
+	public static void main(String[] args) {
+		Pattern p=Pattern.compile("(0|91)?[7-9][0-9]{9}");
+		Matcher m=p.matcher(args[0]);
+		if(m.find() && m.group().equals(args[0])){
+			System.out.println("Number is Valid...");
+		}
+		else {
+			System.out.println("Number is not valid ...");
+		}
+	}
+
+}
+
+==============================================================================================
